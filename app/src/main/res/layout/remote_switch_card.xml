@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:remote_switch_cv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/remote_switch_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    remote_switch_cv:cardCornerRadius="20dp"
+    android:clickable="false"
+    android:background="@android:color/transparent"
+    android:focusable="false"
+    android:animateLayoutChanges="true"
+    remote_switch_cv:cardElevation="8dp">
+
+
+
+    <LinearLayout
+        android:longClickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:longClickable="false"
+            android:id="@+id/switch_name"
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:animateLayoutChanges="true"
+            android:imeActionLabel="Save"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            tools:text="Remote switch" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_desc"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:imeActionLabel="Save"
+            android:inputType="text"
+            android:maxLines="1"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            android:imeOptions="actionDone"
+
+            android:background="@android:color/transparent"
+            android:layout_margin="5dp"
+            android:text="@string/lampada_camera"
+            />
+        <TextView
+            android:longClickable="false"
+            android:id="@+id/offline_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/outline_cloud_off_24"
+            android:drawableTint="@color/teal_700"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="@string/currently_offline"
+            android:textColor="@color/teal_700"
+            />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/rs_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_lightbulb"
+            android:textColor="#707070"
+            android:textSize="20sp"
+     />
+
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

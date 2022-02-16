@@ -1,0 +1,48 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Dome20" parent="Theme.AppCompat.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorControlHighlight">@color/teal_700</item>
+
+        <item name="colorControlActivated">@color/teal_700</item>
+        <item name="colorControlNormal">@color/teal_200</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:buttonStyle">@style/ThermostatButton</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetRounded</item>
+        <item name="android:switchStyle">@style/RemoteSwitchToggle</item>
+        <item name="bottomSheetStyle">@style/BottomSheetRounded</item>
+        <item name="android:textViewStyle">@style/AnimatedTextView</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="preferenceCategoryTitleTextColor">@color/teal_700</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ThermostatButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">#737373</item>
+        <item name="elevation">10dp</item>
+    </style>
+
+    <style name="RemoteSwitchToggle" parent="android:Widget.Material.CompoundButton.Switch">
+        <item name="android:textColor">#13FFFFFF</item>
+    </style>
+
+    <style name="BottomSheetRounded" parent="Theme.Material3.Light.BottomSheetDialog">
+        <item name="android:background">@drawable/bottom_sheet_style</item>
+    </style>
+
+    <style name="AnimatedTextView" parent="android:Widget.TextView">
+        <item name="android:animation">@anim/textview_animation</item>
+    </style>
+
+</resources>

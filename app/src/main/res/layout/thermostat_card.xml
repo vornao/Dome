@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:thermostat_cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/thermostat_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:animateLayoutChanges="true"
+    thermostat_cardview:cardCornerRadius="20dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/ripple_teal"
+    thermostat_cardview:cardElevation="8dp"
+    >
+
+
+        <LinearLayout
+            android:padding="20dp"
+            android:longClickable="false"
+            android:id="@+id/thermostat_card_ll"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:longClickable="false"
+                android:id="@+id/device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textSize="30sp"
+                tools:text="@tools:sample/us_phones" />
+
+            <TextView
+                android:longClickable="false"
+                android:id="@+id/offline_therm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"
+                android:drawableStart="@drawable/outline_cloud_off_24"
+                android:drawableTint="@color/teal_700"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:animateLayoutChanges="true"
+                android:text="@string/currently_offline" />
+
+            <TextView
+                android:longClickable="false"
+                android:id="@+id/device_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/outline_thermostat_24"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textSize="24sp"
+                tools:text="@tools:sample/full_names" />
+
+            <TextView
+                android:longClickable="false"
+                android:id="@+id/device_hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textSize="18sp"
+                android:visibility="gone"
+                tools:text="@tools:sample/full_names"
+                thermostat_cardview:drawableStartCompat="@drawable/ic_baseline_water_drop_24" />
+
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

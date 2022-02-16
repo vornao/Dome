@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/writeNfc"
+        android:iconTint="@color/black"
+        android:icon="@drawable/outline_drive_file_rename_outline_24"
+        android:title="@string/join_dome_network"
+        app:showAsAction="ifRoom" />
+</menu>

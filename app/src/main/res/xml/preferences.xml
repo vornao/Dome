@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:persistent="true">
+
+    <PreferenceCategory
+        app:persistent="true"
+        app:key="mqtt_category"
+        app:title="MQTT Server"
+        >
+
+    <EditTextPreference
+        app:persistent="true"
+        app:key="broker"
+        app:title="@string/mqtt_broker_pref"
+        app:summary="@string/setup_broker_pref" />
+
+    <EditTextPreference
+        app:persistent="true"
+        app:key="broker_port"
+        app:title="@string/mqtt_port_pref"
+        app:summary="@string/select_port_pref"
+    />
+
+    <EditTextPreference
+        app:persistent="true"
+        app:key="mqtt_username"
+        app:title="MQTT Username"
+        app:summary="@string/select_username_pref"
+        />
+    <EditTextPreference
+        app:persistent="true"
+        app:key="mqtt_password"
+        app:title="MQTT Password"
+        app:summary="@string/change_pass_pref"
+        />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="energyMonitorCategory"
+        app:title="@string/power_category_pref">
+        <EditTextPreference
+            app:persistent="true"
+            app:key="emon_max_power"
+            app:title="@string/max_power_pref"
+            app:summary="@string/power_rating_pref"
+            />
+        <CheckBoxPreference
+            app:persistent="true"
+            app:key="emon_notification"
+            app:title="Power Burst Nofications"
+            app:summary="@string/notification_pref"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="thermostatCategory"
+        app:title="@string/thermostat_category_pref">
+        <CheckBoxPreference
+            app:persistent="true"
+            app:key="heat_notification_check"
+            app:title="Heating reminders"
+            app:summary="@string/thermostat_notification_pref"
+            />
+        <EditTextPreference
+            app:persistent="true"
+            app:key="heat_notification_time"
+            app:title="Notification time"
+            app:summary="@string/notification_time_pref"
+            />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="help_category"
+        app:title="@string/help_pref">
+
+        <Preference
+            app:key="feedback"
+            app:summary="@string/techincal_issues_pref"
+            app:title="@string/send_feedback_pref"/>
+        <Preference
+            app:key="about"
+            app:summary="@string/about_pref_desc"
+            app:title="@string/about_pref"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:persistent="true"
+        app:key="advanced_category"
+        app:title="@string/advanced_pref"
+        >
+        <EditTextPreference
+            app:persistent="true"
+            app:key="mqtt-topic"
+            app:title="@string/enviroment_select_title_pref"
+            app:summary="@string/enviroment_select_pref" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
