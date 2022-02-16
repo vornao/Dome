@@ -14,7 +14,7 @@
     <string name="high_impact">High</string>
     <string name="very_high_impact">Very high</string>
     <string name="lowercase_energy_impact">energy impact</string>
-    <string name="default_notification_channel_id" translatable="false">default_id</string>
+    <string name="default_notification_channel_id" translatable="false">dome_notification_channel</string>
     <string name="nfc_helper">Put your device close to Dome NFC Tag</string>
     <string name="nfc_write_helper">Put your device close to Dome NFC Tag. All tag data will be lost.</string>
     <string name="join_dome_network">Join new Dome</string>

@@ -552,7 +552,7 @@ public class MainActivity extends AppCompatActivity {
                     getApplicationContext()
                             .getResources()
                             .getString(R.string.default_notification_channel_id),
-                    "dome_notification_channel",
+                    "Dome Notifications",
                     NotificationManager.IMPORTANCE_DEFAULT);
             notificationManager.createNotificationChannel(channel);
         }
