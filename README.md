@@ -1,5 +1,5 @@
-# Dome
-## Home automation environment, for makers
+# Dome - ![CodeGrade](https://api.codiga.io/project/31356/status/svg)
+## Home automation environment, for makers 
 
 Dome let you create and manage MQTT IoT devices with a simple, clean and intuitive interface.
 
