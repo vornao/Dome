@@ -24,13 +24,21 @@ Contact me for further details.
 
 ---
 ## Screenshots and demo
+<div class="row">
+  <div class="column">
+    <figure>
+        <img src="media/overview.gif" alt="overview" style="width:100%">
+        <figcaption>App Overview</figcaption>
+    </figure>
+  </div>
+  <div class="column">
+    <figure>
+        <img src="media/move_demo.gif" alt="Layout" style="width:100%">
+        <figcaption>Manage layout</figcaption>
+    </figure>
+  </div>
+</div>
 
-<figure>
-  <img
-  src="https://github.com/vornao/Dome/blob/master/media/overview.gif"
-  alt="">
-  <figcaption>App Overview</figcaption>
-</figure>
 
 ## Notifications preview
 |![HeatingNotification](media/heating_not.jpg)|![PowerNotification](media/power_not.jpg)|
