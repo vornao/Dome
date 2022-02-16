@@ -22,11 +22,15 @@ All you need is WiFi and a MQTT broker; download and install scripts from dome-b
 
 Contact me for further details.
 
-## Screenshots and demo
 ---
-|![mainActivity](media/overview.gif)|![DemoRV](media/move_demo.gif)|
-|:--:|:--:|
-|*App overview*|*Customize devices*|
+## Screenshots and demo
+
+<figure>
+  <img
+  src="https://github.com/vornao/Dome/blob/master/media/overview.gif"
+  alt="">
+  <figcaption>App Overview</figcaption>
+</figure>
 
 ## Notifications preview
 |![HeatingNotification](media/heating_not.jpg)|![PowerNotification](media/power_not.jpg)|
