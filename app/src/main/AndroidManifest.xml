@@ -20,8 +20,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.Dome20">
-        <activity android:name="net.vornao.ddns.dome.activities.MainActivity"
-            android:theme="@style/Theme.Dome20">
+        <activity
+            android:name="net.vornao.ddns.dome.activities.MainActivity"
+            android:theme="@style/Theme.Dome20"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,7 +45,8 @@
         </activity>
         <activity
             android:name="net.vornao.ddns.dome.activities.NfcReadActivity"
-            android:parentActivityName="net.vornao.ddns.dome.activities.MainActivity">
+            android:parentActivityName="net.vornao.ddns.dome.activities.MainActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="net.vornao.ddns.dome.activities.MainActivity" />
@@ -55,6 +58,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:exported="true"
             android:name="net.vornao.ddns.dome.activities.NfcWriteActivity"
             android:parentActivityName="net.vornao.ddns.dome.activities.NfcReadActivity">
             <meta-data
